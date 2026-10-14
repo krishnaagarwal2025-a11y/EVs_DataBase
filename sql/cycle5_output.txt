@@ -1,0 +1,58 @@
+--- Customer Profile ---                                                                                                                                                                                
+Customer ID : 401                                                                                                                                                                                       
+Name        : Aarav                                                                                                                                                                                     
+Email       : aarav.sharma@gmail.com                                                                                                                                                                    
+Joined On   : 15-JAN-2023                                                                                                                                                                               
+
+PL/SQL procedure successfully completed.
+
+Station ID: 201 | Rate: Rs.18.5 | Category: Standard Commercial Station                                                                                                                                 
+
+PL/SQL procedure successfully completed.
+
+Point ID: 301 | Mode: DC | Classification: Fast / Rapid DC Charger                                                                                                                                      
+
+PL/SQL procedure successfully completed.
+
+Original String: MADAM                                                                                                                                                                                  
+Reversed String: MADAM                                                                                                                                                                                  
+Result: The string IS a palindrome.                                                                                                                                                                     
+
+PL/SQL procedure successfully completed.
+
+--- Stations List (Explicit Cursor) ---                                                                                                                                                                 
+Station 201 on Katpadi Main Road charges Rs.18.5/unit                                                                                                                                                   
+Station 202 on Anna Salai, T Nagar charges Rs.20/unit                                                                                                                                                   
+Station 203 on Indiranagar 100ft Rd charges Rs.22/unit                                                                                                                                                  
+Station 204 on Avinashi Road charges Rs.19/unit                                                                                                                                                         
+Station 205 on KK Nagar Ring Road charges Rs.16.5/unit                                                                                                                                                  
+Station 206 on HITEC City Phase 2 charges Rs.21/unit                                                                                                                                                    
+
+PL/SQL procedure successfully completed.
+
+--- Charging Points for Station 201 ---                                                                                                                                                                 
+Gun 301 | Type: CCS2 | Mode: DC | Power: 60kW | Status: Available                                                                                                                                       
+Gun 302 | Type: Type-2 | Mode: AC | Power: 22kW | Status: Available                                                                                                                                     
+
+PL/SQL procedure successfully completed.
+
+
+Procedure created.
+
+
+Procedure created.
+
+
+Function created.
+
+
+Function created.
+
+=== Testing Stored Procedures and Functions ===                                                                                                                                                         
+Procedure 1 Result -> Name: Aarav Sharma, Email: aarav.sharma@gmail.com                                                                                                                                 
+Function 1 Result  -> Total Bill for Session 601: Rs.527.25                                                                                                                                             
+Function 2 Result  -> Total Points at Station 201: 2                                                                                                                                                    
+Tariff for Station 201 updated to Rs.19.5                                                                                                                                                               
+
+PL/SQL procedure successfully completed.
+

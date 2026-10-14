@@ -1,0 +1,39 @@
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+INSERT INTO CUSTOMER (Customer_ID, First_Name, Last_Name, Email, Registration_Date)
+*
+ERROR at line 1:
+ORA-00001: unique constraint (SYSTEM.PK_CUSTOMER) violated 
+
+
+INSERT INTO STATION (Station_ID, Operator_ID, Street, Pincode, Contact_No, Tariff_Rate)
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (SYSTEM.FK_STATION_OPERATOR) violated - parent key not found 
+
+
+INSERT INTO CHARGING_POINT (Point_ID, Station_ID, Connector_Type, Charging_Mode, Status, Power_Rating)
+*
+ERROR at line 1:
+ORA-02290: check constraint (SYSTEM.CK_POINT_STATUS) violated 
+
+
+INSERT INTO STATION (Station_ID, Operator_ID, Street, Pincode, Contact_No, Tariff_Rate)
+*
+ERROR at line 1:
+ORA-02290: check constraint (SYSTEM.CK_STATION_TARIFF) violated 
+
+
+
+Rollback complete.
+

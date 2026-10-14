@@ -1,0 +1,9 @@
+# Compiled Java class files
+*.class
+
+# Large binary JAR files (JDBC driver)
+*.jar
+
+# Temporary or system files
+.DS_Store
+Thumbs.db
