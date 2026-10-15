@@ -1,10 +1,3 @@
--- ====================================================================
--- Voltgrid: Smart EV Charging Station Network
--- File: data.sql
--- Description: Sample Data Population (5-8 rows per table)
--- Style: First Year B.Tech DBMS Lab Manual Standard
--- ====================================================================
-
 -- 1. INSERT INTO OPERATOR
 INSERT INTO OPERATOR (Operator_ID, Name, License_No, Contact_Info)
 VALUES (101, 'Tata Power EV', 'LIC-TP-2023-01', 'support@tatapowerezcharge.com');
@@ -238,17 +231,3 @@ VALUES (307, 1, 'Emergency stop button test', TO_DATE('2024-02-20', 'YYYY-MM-DD'
 
 -- Commit all initial records
 COMMIT;
-
--- ====================================================================
--- INTERACTIVE INSERT SECTION (Cycle Sheet I lab requirement)
--- Note: In SQL*Plus, uncomment and run these to insert interactively
--- using substitution variables (& variable_name).
--- ====================================================================
-
--- Interactive Insert for CUSTOMER:
--- INSERT INTO CUSTOMER (Customer_ID, First_Name, Last_Name, Email, Registration_Date)
--- VALUES (&Customer_ID, '&First_Name', '&Last_Name', '&Email', TO_DATE('&Registration_Date', 'YYYY-MM-DD'));
-
--- Interactive Insert for CHARGING_POINT:
--- INSERT INTO CHARGING_POINT (Point_ID, Station_ID, Connector_Type, Charging_Mode, Status, Power_Rating)
--- VALUES (&Point_ID, &Station_ID, '&Connector_Type', '&Charging_Mode', '&Status', &Power_Rating);
