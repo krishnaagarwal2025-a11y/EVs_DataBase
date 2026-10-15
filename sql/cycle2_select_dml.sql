@@ -1,20 +1,8 @@
--- ====================================================================
--- Voltgrid: Smart EV Charging Station Network
--- File: cycle2_select_dml.sql
--- Description: Cycle Sheet II - Basic SELECT, Filtering, DML, TCL
--- Lab Mapping:
--- BORROWER -> CUSTOMER | LIBRARY_BRANCH -> STATION | PUBLISHER -> OPERATOR
--- BOOK_LOANS -> CHARGING_SESSION | BOOK_COPIES -> CHARGING_POINT | BOOK -> VEHICLE
--- ====================================================================
-
 SET LINESIZE 200
 SET PAGESIZE 50
 SPOOL cycle2_output.txt
 
--- ====================================================================
 -- 1. COLUMN ALIASES
--- ====================================================================
-
 -- 1.1 Display customer names and contact email with friendly column headings
 SELECT Customer_ID AS "Cust Code", First_Name || ' ' || Last_Name AS "Full Name", Email AS "Email Address" 
 FROM CUSTOMER;
@@ -28,10 +16,7 @@ SELECT Point_ID AS "Gun ID", Connector_Type AS "Plug Type", Power_Rating AS "Cap
 FROM CHARGING_POINT;
 
 
--- ====================================================================
 -- 2. DISTINCT CLAUSE
--- ====================================================================
-
 -- 2.1 Display distinct charging modes configured across network
 SELECT DISTINCT Charging_Mode FROM CHARGING_POINT;
 
@@ -44,10 +29,7 @@ FROM PINCODE_AREA p, STATION s
 WHERE p.Pincode = s.Pincode;
 
 
--- ====================================================================
 -- 3. COMPUTED COLUMNS
--- ====================================================================
-
 -- 3.1 Calculate estimated charging cost for each session based on station tariff rate
 SELECT cs.Session_ID, cs.Units_Consumed, st.Tariff_Rate, 
        (cs.Units_Consumed * st.Tariff_Rate) AS Total_Cost_INR
@@ -64,10 +46,7 @@ SELECT Model, Battery_Capacity, (100.00 - Battery_Capacity) AS "Shortfall From 1
 FROM VEHICLE_MODEL;
 
 
--- ====================================================================
 -- 4. FILTERING: LIKE, BETWEEN, IN, NOT, AND/OR
--- ====================================================================
-
 -- 4.1 LIKE: Find customers whose first name begins with letter 'A'
 SELECT Customer_ID, First_Name, Email FROM CUSTOMER WHERE First_Name LIKE 'A%';
 
@@ -83,9 +62,8 @@ FROM CHARGING_POINT
 WHERE Charging_Mode = 'DC' AND NOT (Status = 'Faulty');
 
 
--- ====================================================================
+
 -- 5. IS NULL / IS NOT NULL
--- ====================================================================
 
 -- 5.1 Find completed charging sessions where End_Time is recorded (NOT NULL)
 SELECT Session_ID, Vehicle_No, Start_Time, End_Time FROM CHARGING_SESSION WHERE End_Time IS NOT NULL;
@@ -97,9 +75,7 @@ SELECT Customer_ID, First_Name, Last_Name FROM CUSTOMER WHERE Last_Name IS NOT N
 SELECT Operator_ID, Name, Contact_Info FROM OPERATOR WHERE Contact_Info IS NOT NULL;
 
 
--- ====================================================================
 -- 6. MULTI-COLUMN UPDATE
--- ====================================================================
 
 -- 6.1 Update both Status and Power_Rating of a charging point in a single statement
 UPDATE CHARGING_POINT 
@@ -118,9 +94,7 @@ WHERE Station_ID = 201;
 SELECT Station_ID, Contact_No, Tariff_Rate FROM STATION WHERE Station_ID = 201;
 
 
--- ====================================================================
 -- 7. DELETE WITHOUT BREAKING FOREIGN KEYS
--- ====================================================================
 
 -- 7.1 Insert a temporary test vehicle model and delete it safely
 INSERT INTO VEHICLE_MODEL (Model, Battery_Capacity) VALUES ('Temp Test Car', 45.00);
@@ -137,9 +111,7 @@ VALUES (999, 'Temp', 'User', 'temp.user@test.com', TO_DATE('2024-01-01', 'YYYY-M
 DELETE FROM CUSTOMER WHERE Customer_ID = 999;
 
 
--- ====================================================================
 -- 8. ORDER BY (ASC, DESC, MULTIPLE COLUMNS)
--- ====================================================================
 
 -- 8.1 Display stations sorted by tariff rate in ascending order
 SELECT Station_ID, Street, Tariff_Rate FROM STATION ORDER BY Tariff_Rate ASC;
@@ -153,9 +125,7 @@ FROM CHARGING_POINT
 ORDER BY Station_ID ASC, Power_Rating DESC;
 
 
--- ====================================================================
 -- 9. BUILT-IN ENVIRONMENT & DATE/TIME: SYSDATE, SYSTIMESTAMP, USER
--- ====================================================================
 
 -- 9.1 Display current database server system date
 SELECT SYSDATE AS "Current Server Date" FROM DUAL;
@@ -170,9 +140,7 @@ SELECT USER AS "Active Database User" FROM DUAL;
 SELECT Session_ID, Vehicle_No, Start_Time FROM CHARGING_SESSION WHERE Start_Time <= SYSDATE;
 
 
--- ====================================================================
 -- 10. TRANSACTION CONTROL: SAVEPOINT, ROLLBACK TO SAVEPOINT, COMMIT
--- ====================================================================
 
 -- 10.1 First update in transaction
 UPDATE STATION SET Tariff_Rate = 25.00 WHERE Station_ID = 202;

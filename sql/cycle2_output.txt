@@ -1,0 +1,294 @@
+
+ Cust Code Full Name                                                     Email Address                                                                                                                  
+---------- ------------------------------------------------------------- --------------------------------------------------                                                                             
+       401 Aarav Sharma                                                  aarav.sharma@gmail.com                                                                                                         
+       402 Priya Nair                                                    priya.nair@gmail.com                                                                                                           
+       403 Karthik Rajan                                                 karthik.rajan@yahoo.com                                                                                                        
+       404 Ananya Reddy                                                  ananya.reddy@outlook.com                                                                                                       
+       405 Vikram Mehta                                                  vikram.mehta@gmail.com                                                                                                         
+       406 Sneha Patel                                                   sneha.patel@gmail.com                                                                                                          
+
+6 rows selected.
+
+
+Station ID Location                                                                                             Rate Per Unit (INR)                                                                     
+---------- ---------------------------------------------------------------------------------------------------- -------------------                                                                     
+       201 Katpadi Main Road                                                                                                   18.5                                                                     
+       202 Anna Salai, T Nagar                                                                                                   20                                                                     
+       203 Indiranagar 100ft Rd                                                                                                  22                                                                     
+       204 Avinashi Road                                                                                                         19                                                                     
+       205 KK Nagar Ring Road                                                                                                  16.5                                                                     
+       206 HITEC City Phase 2                                                                                                    21                                                                     
+
+6 rows selected.
+
+
+    Gun ID Plug Type            Capacity (kW)                                                                                                                                                           
+---------- -------------------- -------------                                                                                                                                                           
+       301 CCS2                            60                                                                                                                                                           
+       302 Type-2                          22                                                                                                                                                           
+       303 CCS2                            50                                                                                                                                                           
+       304 CCS2                           120                                                                                                                                                           
+       305 Type-2                          11                                                                                                                                                           
+       306 GB/T                            30                                                                                                                                                           
+       307 CCS2                            60                                                                                                                                                           
+
+7 rows selected.
+
+
+CHARGING_M                                                                                                                                                                                              
+----------                                                                                                                                                                                              
+DC                                                                                                                                                                                                      
+AC                                                                                                                                                                                                      
+
+
+CONNECTOR_TYPE                                                                                                                                                                                          
+--------------------                                                                                                                                                                                    
+CCS2                                                                                                                                                                                                    
+Type-2                                                                                                                                                                                                  
+GB/T                                                                                                                                                                                                    
+
+
+CITY                                                                                                                                                                                                    
+--------------------------------------------------                                                                                                                                                      
+Vellore                                                                                                                                                                                                 
+Chennai                                                                                                                                                                                                 
+Bengaluru                                                                                                                                                                                               
+Coimbatore                                                                                                                                                                                              
+Madurai                                                                                                                                                                                                 
+Hyderabad                                                                                                                                                                                               
+
+6 rows selected.
+
+
+SESSION_ID UNITS_CONSUMED TARIFF_RATE TOTAL_COST_INR                                                                                                                                                    
+---------- -------------- ----------- --------------                                                                                                                                                    
+       601           28.5        18.5         527.25                                                                                                                                                    
+       606           35.8        18.5          662.3                                                                                                                                                    
+       604           18.2        18.5          336.7                                                                                                                                                    
+       602             32          20            640                                                                                                                                                    
+       603             45          22            990                                                                                                                                                    
+       605           25.4          21          533.4                                                                                                                                                    
+
+6 rows selected.
+
+
+SESSION_ID VEHICLE_NO           DURATION_HOURS                                                                                                                                                          
+---------- -------------------- --------------                                                                                                                                                          
+       601 TN-23-AB-1234                  1.25                                                                                                                                                          
+       602 TN-01-CD-5678                  1.25                                                                                                                                                          
+       603 KA-03-EF-9012                     1                                                                                                                                                          
+       604 TN-38-GH-3456                   2.5                                                                                                                                                          
+       605 TS-09-JK-7890                  1.17                                                                                                                                                          
+       606 TN-59-LM-2345                  1.33                                                                                                                                                          
+
+6 rows selected.
+
+
+MODEL                          BATTERY_CAPACITY Shortfall From 100kWh                                                                                                                                   
+------------------------------ ---------------- ---------------------                                                                                                                                   
+Tata Nexon EV                              40.5                  59.5                                                                                                                                   
+Tata Punch EV                                35                    65                                                                                                                                   
+MG ZS EV                                   50.3                  49.7                                                                                                                                   
+Mahindra XUV400                            39.4                  60.6                                                                                                                                   
+Hyundai Ioniq 5                            72.6                  27.4                                                                                                                                   
+BYD Atto 3                                60.48                 39.52                                                                                                                                   
+
+6 rows selected.
+
+
+CUSTOMER_ID FIRST_NAME                     EMAIL                                                                                                                                                        
+----------- ------------------------------ --------------------------------------------------                                                                                                           
+        401 Aarav                          aarav.sharma@gmail.com                                                                                                                                       
+        404 Ananya                         ananya.reddy@outlook.com                                                                                                                                     
+
+
+  POINT_ID CONNECTOR_TYPE       POWER_RATING                                                                                                                                                            
+---------- -------------------- ------------                                                                                                                                                            
+       301 CCS2                           60                                                                                                                                                            
+       302 Type-2                         22                                                                                                                                                            
+       303 CCS2                           50                                                                                                                                                            
+       306 GB/T                           30                                                                                                                                                            
+       307 CCS2                           60                                                                                                                                                            
+
+
+STATION_ID STREET                                                                                                  PINCODE                                                                              
+---------- ---------------------------------------------------------------------------------------------------- ----------                                                                              
+       201 Katpadi Main Road                                                                                        632014                                                                              
+       203 Indiranagar 100ft Rd                                                                                     560001                                                                              
+
+
+  POINT_ID STATION_ID CHARGING_M STATUS                                                                                                                                                                 
+---------- ---------- ---------- ---------------                                                                                                                                                        
+       301        201 DC         Available                                                                                                                                                              
+       303        202 DC         In-Use                                                                                                                                                                 
+       304        203 DC         Available                                                                                                                                                              
+       306        205 DC         Available                                                                                                                                                              
+       307        206 DC         In-Use                                                                                                                                                                 
+
+
+SESSION_ID VEHICLE_NO           START_TIM END_TIME                                                                                                                                                      
+---------- -------------------- --------- ---------                                                                                                                                                     
+       601 TN-23-AB-1234        01-MAR-24 01-MAR-24                                                                                                                                                     
+       602 TN-01-CD-5678        01-MAR-24 01-MAR-24                                                                                                                                                     
+       603 KA-03-EF-9012        02-MAR-24 02-MAR-24                                                                                                                                                     
+       604 TN-38-GH-3456        02-MAR-24 02-MAR-24                                                                                                                                                     
+       605 TS-09-JK-7890        03-MAR-24 03-MAR-24                                                                                                                                                     
+       606 TN-59-LM-2345        03-MAR-24 03-MAR-24                                                                                                                                                     
+
+6 rows selected.
+
+
+CUSTOMER_ID FIRST_NAME                     LAST_NAME                                                                                                                                                    
+----------- ------------------------------ ------------------------------                                                                                                                               
+        401 Aarav                          Sharma                                                                                                                                                       
+        402 Priya                          Nair                                                                                                                                                         
+        403 Karthik                        Rajan                                                                                                                                                        
+        404 Ananya                         Reddy                                                                                                                                                        
+        405 Vikram                         Mehta                                                                                                                                                        
+        406 Sneha                          Patel                                                                                                                                                        
+
+6 rows selected.
+
+
+OPERATOR_ID NAME                                               CONTACT_INFO                                                                                                                             
+----------- -------------------------------------------------- --------------------------------------------------                                                                                       
+        101 Tata Power EV                                      support@tatapowerezcharge.com                                                                                                            
+        102 Zeon Charging                                      contact@zeoncharging.com                                                                                                                 
+        103 Statiq EV                                          help@statiq.in                                                                                                                           
+        104 Ather Grid                                         grid@atherenergy.com                                                                                                                     
+        105 Relux Electric                                     care@reluxelectric.com                                                                                                                   
+        106 ChargeZone                                         support@chargezone.com                                                                                                                   
+
+6 rows selected.
+
+
+1 row updated.
+
+
+  POINT_ID STATUS          POWER_RATING                                                                                                                                                                 
+---------- --------------- ------------                                                                                                                                                                 
+       301 Available                 65                                                                                                                                                                 
+
+
+1 row updated.
+
+
+STATION_ID CONTACT_NO      TARIFF_RATE                                                                                                                                                                  
+---------- --------------- -----------                                                                                                                                                                  
+       201 9444012345               19                                                                                                                                                                  
+
+
+1 row created.
+
+
+MODEL                          BATTERY_CAPACITY                                                                                                                                                         
+------------------------------ ----------------                                                                                                                                                         
+Temp Test Car                                45                                                                                                                                                         
+
+
+1 row deleted.
+
+
+no rows selected
+
+
+1 row created.
+
+
+1 row deleted.
+
+
+STATION_ID STREET                                                                                               TARIFF_RATE                                                                             
+---------- ---------------------------------------------------------------------------------------------------- -----------                                                                             
+       205 KK Nagar Ring Road                                                                                          16.5                                                                             
+       201 Katpadi Main Road                                                                                             19                                                                             
+       204 Avinashi Road                                                                                                 19                                                                             
+       202 Anna Salai, T Nagar                                                                                           20                                                                             
+       206 HITEC City Phase 2                                                                                            21                                                                             
+       203 Indiranagar 100ft Rd                                                                                          22                                                                             
+
+6 rows selected.
+
+
+SESSION_ID VEHICLE_NO           UNITS_CONSUMED                                                                                                                                                          
+---------- -------------------- --------------                                                                                                                                                          
+       603 KA-03-EF-9012                    45                                                                                                                                                          
+       606 TN-59-LM-2345                  35.8                                                                                                                                                          
+       602 TN-01-CD-5678                    32                                                                                                                                                          
+       601 TN-23-AB-1234                  28.5                                                                                                                                                          
+       605 TS-09-JK-7890                  25.4                                                                                                                                                          
+       604 TN-38-GH-3456                  18.2                                                                                                                                                          
+
+6 rows selected.
+
+
+  POINT_ID STATION_ID CONNECTOR_TYPE       POWER_RATING                                                                                                                                                 
+---------- ---------- -------------------- ------------                                                                                                                                                 
+       301        201 CCS2                           65                                                                                                                                                 
+       302        201 Type-2                         22                                                                                                                                                 
+       303        202 CCS2                           50                                                                                                                                                 
+       304        203 CCS2                          120                                                                                                                                                 
+       305        204 Type-2                         11                                                                                                                                                 
+       306        205 GB/T                           30                                                                                                                                                 
+       307        206 CCS2                           60                                                                                                                                                 
+
+7 rows selected.
+
+
+Current S                                                                                                                                                                                               
+---------                                                                                                                                                                                               
+15-OCT-26                                                                                                                                                                                               
+
+
+Current Server Timestamp                                                                                                                                                                                
+---------------------------------------------------------------------------                                                                                                                             
+15-OCT-26 10.39.11.147000 AM +05:30                                                                                                                                                                     
+
+
+Active Database User                                                                                                                                                                                    
+--------------------------------------------------------------------------------------------------------------------------------                                                                        
+SYSTEM                                                                                                                                                                                                  
+
+
+SESSION_ID VEHICLE_NO           START_TIM                                                                                                                                                               
+---------- -------------------- ---------                                                                                                                                                               
+       601 TN-23-AB-1234        01-MAR-24                                                                                                                                                               
+       602 TN-01-CD-5678        01-MAR-24                                                                                                                                                               
+       603 KA-03-EF-9012        02-MAR-24                                                                                                                                                               
+       604 TN-38-GH-3456        02-MAR-24                                                                                                                                                               
+       605 TS-09-JK-7890        03-MAR-24                                                                                                                                                               
+       606 TN-59-LM-2345        03-MAR-24                                                                                                                                                               
+
+6 rows selected.
+
+
+1 row updated.
+
+
+Savepoint created.
+
+
+1 row updated.
+
+
+  POINT_ID STATUS                                                                                                                                                                                       
+---------- ---------------                                                                                                                                                                              
+       302 Faulty                                                                                                                                                                                       
+
+
+Rollback complete.
+
+
+  POINT_ID STATUS                                                                                                                                                                                       
+---------- ---------------                                                                                                                                                                              
+       302 Available                                                                                                                                                                                    
+
+
+STATION_ID TARIFF_RATE                                                                                                                                                                                  
+---------- -----------                                                                                                                                                                                  
+       202          25                                                                                                                                                                                  
+
+
+Commit complete.
+

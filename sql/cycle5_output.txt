@@ -6,7 +6,7 @@ Joined On   : 15-JAN-2023
 
 PL/SQL procedure successfully completed.
 
-Station ID: 201 | Rate: Rs.18.5 | Category: Standard Commercial Station                                                                                                                                 
+Station ID: 201 | Rate: Rs.19 | Category: Standard Commercial Station                                                                                                                                   
 
 PL/SQL procedure successfully completed.
 
@@ -21,8 +21,8 @@ Result: The string IS a palindrome.
 PL/SQL procedure successfully completed.
 
 --- Stations List (Explicit Cursor) ---                                                                                                                                                                 
-Station 201 on Katpadi Main Road charges Rs.18.5/unit                                                                                                                                                   
-Station 202 on Anna Salai, T Nagar charges Rs.20/unit                                                                                                                                                   
+Station 201 on Katpadi Main Road charges Rs.19/unit                                                                                                                                                     
+Station 202 on Anna Salai, T Nagar charges Rs.25/unit                                                                                                                                                   
 Station 203 on Indiranagar 100ft Rd charges Rs.22/unit                                                                                                                                                  
 Station 204 on Avinashi Road charges Rs.19/unit                                                                                                                                                         
 Station 205 on KK Nagar Ring Road charges Rs.16.5/unit                                                                                                                                                  
@@ -50,7 +50,7 @@ Function created.
 
 === Testing Stored Procedures and Functions ===                                                                                                                                                         
 Procedure 1 Result -> Name: Aarav Sharma, Email: aarav.sharma@gmail.com                                                                                                                                 
-Function 1 Result  -> Total Bill for Session 601: Rs.527.25                                                                                                                                             
+Function 1 Result  -> Total Bill for Session 601: Rs.541.5                                                                                                                                              
 Function 2 Result  -> Total Points at Station 201: 2                                                                                                                                                    
 Tariff for Station 201 updated to Rs.19.5                                                                                                                                                               
 

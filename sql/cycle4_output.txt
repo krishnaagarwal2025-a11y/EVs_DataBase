@@ -1,12 +1,12 @@
 
-CUSTOMER_ID FIRST_NAME                     LAST_NAME                      VEHICLE_NO           MODEL                                                                                                    
------------ ------------------------------ ------------------------------ -------------------- ------------------------------                                                                           
-        401 Aarav                          Sharma                         TN-23-AB-1234        Tata Nexon EV                                                                                            
-        402 Priya                          Nair                           TN-01-CD-5678        MG ZS EV                                                                                                 
-        403 Karthik                        Rajan                          KA-03-EF-9012        Hyundai Ioniq 5                                                                                          
-        404 Ananya                         Reddy                          TN-38-GH-3456        Tata Punch EV                                                                                            
-        405 Vikram                         Mehta                          TS-09-JK-7890        Mahindra XUV400                                                                                          
-        406 Sneha                          Patel                          TN-59-LM-2345        BYD Atto 3                                                                                               
+CUSTOMER_ID FIRST_NAME                     LAST_NAME                                VEHICLE_NO           MODEL                                                                                          
+----------- ------------------------------ ---------------------------------------- -------------------- ------------------------------                                                                 
+        401 Aarav                          Sharma                                   TN-23-AB-1234        Tata Nexon EV                                                                                  
+        402 Priya                          Nair                                     TN-01-CD-5678        MG ZS EV                                                                                       
+        403 Karthik                        Rajan                                    KA-03-EF-9012        Hyundai Ioniq 5                                                                                
+        404 Ananya                         Reddy                                    TN-38-GH-3456        Tata Punch EV                                                                                  
+        405 Vikram                         Mehta                                    TS-09-JK-7890        Mahindra XUV400                                                                                
+        406 Sneha                          Patel                                    TN-59-LM-2345        BYD Atto 3                                                                                     
 
 6 rows selected.
 
@@ -16,10 +16,10 @@ STATION_ID STREET                                                               
 TARIFF_RATE                                                                                                                                                                                             
 -----------                                                                                                                                                                                             
        201 Katpadi Main Road                                                                                    Tata Power EV                                      LIC-TP-2023-01                       
-       18.5                                                                                                                                                                                             
+         19                                                                                                                                                                                             
                                                                                                                                                                                                         
        202 Anna Salai, T Nagar                                                                                  Tata Power EV                                      LIC-TP-2023-01                       
-         20                                                                                                                                                                                             
+         25                                                                                                                                                                                             
                                                                                                                                                                                                         
        203 Indiranagar 100ft Rd                                                                                 Zeon Charging                                      LIC-ZN-2023-02                       
          22                                                                                                                                                                                             
@@ -39,7 +39,7 @@ TARIFF_RATE
 
 STATION_ID CITY                                                 POINT_ID CONNECTOR_TYPE       POWER_RATING                                                                                              
 ---------- -------------------------------------------------- ---------- -------------------- ------------                                                                                              
-       201 Vellore                                                   301 CCS2                           60                                                                                              
+       201 Vellore                                                   301 CCS2                           65                                                                                              
        201 Vellore                                                   302 Type-2                         22                                                                                              
        202 Chennai                                                   303 CCS2                           50                                                                                              
        203 Bengaluru                                                 304 CCS2                          120                                                                                              
@@ -50,14 +50,14 @@ STATION_ID CITY                                                 POINT_ID CONNECT
 7 rows selected.
 
 
-SESSION_ID CUSTOMER_NAME                                                 VEHICLE_NO           UNITS_CONSUMED START_TIM                                                                                  
----------- ------------------------------------------------------------- -------------------- -------------- ---------                                                                                  
-       601 Aarav Sharma                                                  TN-23-AB-1234                  28.5 01-MAR-24                                                                                  
-       602 Priya Nair                                                    TN-01-CD-5678                    32 01-MAR-24                                                                                  
-       603 Karthik Rajan                                                 KA-03-EF-9012                    45 02-MAR-24                                                                                  
-       604 Ananya Reddy                                                  TN-38-GH-3456                  18.2 02-MAR-24                                                                                  
-       605 Vikram Mehta                                                  TS-09-JK-7890                  25.4 03-MAR-24                                                                                  
-       606 Sneha Patel                                                   TN-59-LM-2345                  35.8 03-MAR-24                                                                                  
+SESSION_ID CUSTOMER_NAME                                                           VEHICLE_NO           UNITS_CONSUMED START_TIM                                                                        
+---------- ----------------------------------------------------------------------- -------------------- -------------- ---------                                                                        
+       601 Aarav Sharma                                                            TN-23-AB-1234                  28.5 01-MAR-24                                                                        
+       602 Priya Nair                                                              TN-01-CD-5678                    32 01-MAR-24                                                                        
+       603 Karthik Rajan                                                           KA-03-EF-9012                    45 02-MAR-24                                                                        
+       604 Ananya Reddy                                                            TN-38-GH-3456                  18.2 02-MAR-24                                                                        
+       605 Vikram Mehta                                                            TS-09-JK-7890                  25.4 03-MAR-24                                                                        
+       606 Sneha Patel                                                             TN-59-LM-2345                  35.8 03-MAR-24                                                                        
 
 6 rows selected.
 
@@ -74,14 +74,14 @@ SESSION_ID CHARGING_M UNITS_CONSUMED PAYMENT_MODE         PAYMENT_D
 6 rows selected.
 
 
-CUSTOMER_ID FIRST_NAME                     LAST_NAME                      VEHICLE_NO           MODEL                                                                                                    
------------ ------------------------------ ------------------------------ -------------------- ------------------------------                                                                           
-        401 Aarav                          Sharma                         TN-23-AB-1234        Tata Nexon EV                                                                                            
-        402 Priya                          Nair                           TN-01-CD-5678        MG ZS EV                                                                                                 
-        403 Karthik                        Rajan                          KA-03-EF-9012        Hyundai Ioniq 5                                                                                          
-        404 Ananya                         Reddy                          TN-38-GH-3456        Tata Punch EV                                                                                            
-        405 Vikram                         Mehta                          TS-09-JK-7890        Mahindra XUV400                                                                                          
-        406 Sneha                          Patel                          TN-59-LM-2345        BYD Atto 3                                                                                               
+CUSTOMER_ID FIRST_NAME                     LAST_NAME                                VEHICLE_NO           MODEL                                                                                          
+----------- ------------------------------ ---------------------------------------- -------------------- ------------------------------                                                                 
+        401 Aarav                          Sharma                                   TN-23-AB-1234        Tata Nexon EV                                                                                  
+        402 Priya                          Nair                                     TN-01-CD-5678        MG ZS EV                                                                                       
+        403 Karthik                        Rajan                                    KA-03-EF-9012        Hyundai Ioniq 5                                                                                
+        404 Ananya                         Reddy                                    TN-38-GH-3456        Tata Punch EV                                                                                  
+        405 Vikram                         Mehta                                    TS-09-JK-7890        Mahindra XUV400                                                                                
+        406 Sneha                          Patel                                    TN-59-LM-2345        BYD Atto 3                                                                                     
 
 6 rows selected.
 
@@ -128,7 +128,7 @@ RESERVATION_ID CUSTOMER_ID   POINT_ID STATUS
 
   POINT_ID CONNECTOR_TYPE       POWER_RATING                                                                                                                                                            
 ---------- -------------------- ------------                                                                                                                                                            
-       301 CCS2                           60                                                                                                                                                            
+       301 CCS2                           65                                                                                                                                                            
        304 CCS2                          120                                                                                                                                                            
        307 CCS2                           60                                                                                                                                                            
 
@@ -177,22 +177,21 @@ CUSTOMER_ID FIRST_NAME                     EMAIL
 
 STATION_ID STREET                                                                                               TARIFF_RATE                                                                             
 ---------- ---------------------------------------------------------------------------------------------------- -----------                                                                             
-       201 Katpadi Main Road                                                                                           18.5                                                                             
+       201 Katpadi Main Road                                                                                             19                                                                             
        203 Indiranagar 100ft Rd                                                                                          22                                                                             
        206 HITEC City Phase 2                                                                                            21                                                                             
 
 
 STATION_ID OPERATOR_ID STREET                                                                                               TARIFF_RATE                                                                 
 ---------- ----------- ---------------------------------------------------------------------------------------------------- -----------                                                                 
-       202         101 Anna Salai, T Nagar                                                                                           20                                                                 
+       202         101 Anna Salai, T Nagar                                                                                           25                                                                 
        203         102 Indiranagar 100ft Rd                                                                                          22                                                                 
-       204         103 Avinashi Road                                                                                                 19                                                                 
        206         105 HITEC City Phase 2                                                                                            21                                                                 
 
 
   POINT_ID CONNECTOR_TYPE       CHARGING_M POWER_RATING                                                                                                                                                 
 ---------- -------------------- ---------- ------------                                                                                                                                                 
-       301 CCS2                 DC                   60                                                                                                                                                 
+       301 CCS2                 DC                   65                                                                                                                                                 
        303 CCS2                 DC                   50                                                                                                                                                 
        304 CCS2                 DC                  120                                                                                                                                                 
        306 GB/T                 DC                   30                                                                                                                                                 
@@ -210,7 +209,7 @@ View created.
 
   POINT_ID STATION_ID CONNECTOR_TYPE       CHARGING_M STATUS          POWER_RATING                                                                                                                      
 ---------- ---------- -------------------- ---------- --------------- ------------                                                                                                                      
-       301        201 CCS2                 DC         Available                 60                                                                                                                      
+       301        201 CCS2                 DC         Available                 65                                                                                                                      
        302        201 Type-2               AC         Available                 22                                                                                                                      
        304        203 CCS2                 DC         Available                120                                                                                                                      
        306        205 GB/T                 DC         Available                 30                                                                                                                      

@@ -1,16 +1,7 @@
--- ====================================================================
--- Voltgrid: Smart EV Charging Station Network
--- File: cycle3_functions.sql
--- Description: Cycle Sheet III - DDL Modifications, Built-in Functions & Aggregations
--- ====================================================================
-
 SET LINESIZE 200
 SET PAGESIZE 50
 SPOOL cycle3_output.txt
 
--- ====================================================================
--- 1. ALTER TABLE DDL: MODIFY, ADD, UPDATE, DROP COLUMN
--- ====================================================================
 
 -- 1.1 Modify column width of Last_Name in CUSTOMER to 40 characters
 ALTER TABLE CUSTOMER MODIFY (Last_Name VARCHAR2(40));
@@ -27,10 +18,6 @@ SELECT Session_ID, Vehicle_No, Session_Logged_At FROM CHARGING_SESSION;
 -- 1.4 Drop the newly added column from CHARGING_SESSION
 ALTER TABLE CHARGING_SESSION DROP COLUMN Session_Logged_At;
 
-
--- ====================================================================
--- 2. CHARACTER FUNCTIONS
--- ====================================================================
 
 -- 2.1 UPPER and LOWER: Display customer first name in uppercase and email in lowercase
 SELECT First_Name, UPPER(First_Name) AS Cap_Name, LOWER(Email) AS Small_Email FROM CUSTOMER;
@@ -54,9 +41,6 @@ SELECT TRIM('   Voltgrid Network   ') AS Trimmed_String FROM DUAL;
 SELECT Customer_ID, First_Name || ' ' || Last_Name AS Full_Name FROM CUSTOMER;
 
 
--- ====================================================================
--- 3. NUMERIC FUNCTIONS
--- ====================================================================
 
 -- 3.1 SQRT: Calculate square root of power rating
 SELECT Point_ID, Power_Rating, ROUND(SQRT(Power_Rating), 2) AS Sqrt_Power FROM CHARGING_POINT;
@@ -76,10 +60,6 @@ SELECT Point_ID, MOD(Point_ID, 2) AS Remainder_Mod_2 FROM CHARGING_POINT;
 -- 3.5 CEIL and FLOOR: Calculate ceiling and floor values of station tariff rate
 SELECT Station_ID, Tariff_Rate, CEIL(Tariff_Rate) AS Ceil_Rate, FLOOR(Tariff_Rate) AS Floor_Rate FROM STATION;
 
-
--- ====================================================================
--- 4. DATE FUNCTIONS
--- ====================================================================
 
 -- 4.1 TO_CHAR: Format session start date and time into readable 12-hour format
 SELECT Session_ID, TO_CHAR(Start_Time, 'DD-MON-YYYY HH12:MI:SS AM') AS Formatted_Start FROM CHARGING_SESSION;
@@ -107,10 +87,6 @@ SELECT Customer_ID, Registration_Date,
 FROM CUSTOMER;
 
 
--- ====================================================================
--- 5. CONVERSION FUNCTIONS
--- ====================================================================
-
 -- 5.1 TO_DATE: Convert character string to Oracle date format
 SELECT TO_DATE('15-AUG-2024 10:30:00', 'DD-MON-YYYY HH24:MI:SS') AS Converted_Date FROM DUAL;
 
@@ -118,9 +94,6 @@ SELECT TO_DATE('15-AUG-2024 10:30:00', 'DD-MON-YYYY HH24:MI:SS') AS Converted_Da
 SELECT TO_NUMBER('150.75') + 10.25 AS Total_Calculated FROM DUAL;
 
 
--- ====================================================================
--- 6. GENERAL / NULL FUNCTIONS: NVL, NVL2, COALESCE, NULLIF
--- ====================================================================
 
 -- 6.1 NVL: Replace NULL last name with 'Not Specified'
 SELECT Customer_ID, First_Name, NVL(Last_Name, 'Not Specified') AS Checked_Last_Name FROM CUSTOMER;
@@ -135,10 +108,6 @@ SELECT Customer_ID, COALESCE(Last_Name, First_Name, 'Unknown') AS Customer_Label
 SELECT Point_ID, Connector_Type, NULLIF(Connector_Type, 'CCS2') AS Nullif_Result FROM CHARGING_POINT;
 
 
--- ====================================================================
--- 7. AGGREGATE FUNCTIONS: COUNT, SUM, AVG, MAX, MIN
--- ====================================================================
-
 -- 7.1 COUNT: Find total number of registered customers and total charging points
 SELECT COUNT(*) AS Total_Customers FROM CUSTOMER;
 SELECT COUNT(Point_ID) AS Total_Charging_Points FROM CHARGING_POINT;
@@ -152,10 +121,6 @@ SELECT ROUND(AVG(Tariff_Rate), 2) AS Average_Tariff FROM STATION;
 -- 7.4 MAX and MIN: Find highest and lowest battery capacities among EV models
 SELECT MAX(Battery_Capacity) AS Max_Battery_kWh, MIN(Battery_Capacity) AS Min_Battery_kWh FROM VEHICLE_MODEL;
 
-
--- ====================================================================
--- 8. GROUP BY CLAUSE
--- ====================================================================
 
 -- 8.1 Count total charging points categorized by charging mode (AC vs DC)
 SELECT Charging_Mode, COUNT(*) AS Total_Points 
@@ -172,10 +137,6 @@ SELECT Vehicle_No, SUM(Units_Consumed) AS Total_Units_Charged
 FROM CHARGING_SESSION 
 GROUP BY Vehicle_No;
 
-
--- ====================================================================
--- 9. HAVING CLAUSE
--- ====================================================================
 
 -- 9.1 Filter charging mode groups having more than 2 charging points installed
 SELECT Charging_Mode, COUNT(*) AS Point_Count 

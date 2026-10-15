@@ -1,19 +1,7 @@
--- ====================================================================
--- Voltgrid: Smart EV Charging Station Network
--- File: cycle4_joins_views.sql
--- Description: Cycle Sheet IV - Joins, Subqueries, Correlated Subqueries & Views
--- Lab Mapping:
--- BORROWER -> CUSTOMER | LIBRARY_BRANCH -> STATION | PUBLISHER -> OPERATOR
--- BOOK_LOANS -> CHARGING_SESSION | BOOK_COPIES -> CHARGING_POINT | BOOK -> VEHICLE
--- ====================================================================
-
 SET LINESIZE 200
 SET PAGESIZE 50
 SPOOL cycle4_output.txt
 
--- ====================================================================
--- 1. INNER JOINS (5 Queries)
--- ====================================================================
 
 -- 1.1 Join CUSTOMER and VEHICLE: Display customer details along with registered vehicle
 SELECT c.Customer_ID, c.First_Name, c.Last_Name, v.Vehicle_No, v.Model 
@@ -46,10 +34,6 @@ INNER JOIN PAYMENT pay ON cs.Session_ID = pay.Session_ID
 INNER JOIN CHARGING_POINT cp ON cs.Point_ID = cp.Point_ID;
 
 
--- ====================================================================
--- 2. OUTER JOINS (4 Queries: Left, Right, Full)
--- ====================================================================
-
 -- 2.1 LEFT OUTER JOIN: List all customers and their vehicles (including customers without a vehicle)
 SELECT c.Customer_ID, c.First_Name, c.Last_Name, v.Vehicle_No, v.Model 
 FROM CUSTOMER c
@@ -71,11 +55,6 @@ FROM RESERVATION r
 FULL OUTER JOIN RESERVED_FOR rf ON r.Reservation_ID = rf.Reservation_ID
 FULL OUTER JOIN CHARGING_POINT cp ON rf.Point_ID = cp.Point_ID;
 
-
--- ====================================================================
--- 3. SUBQUERIES
--- ====================================================================
-
 -- 3.1 Scalar Subquery in WHERE clause: Find charging points with power rating higher than network average
 SELECT Point_ID, Connector_Type, Power_Rating 
 FROM CHARGING_POINT 
@@ -92,10 +71,6 @@ FROM STATION st,
      (SELECT Station_ID, COUNT(*) AS Total_Points FROM CHARGING_POINT GROUP BY Station_ID) summary
 WHERE st.Station_ID = summary.Station_ID;
 
-
--- ====================================================================
--- 4. CORRELATED SUBQUERIES (EXISTS / NOT EXISTS - 3 Queries)
--- ====================================================================
 
 -- 4.1 Correlated Subquery with EXISTS: Find customers who have executed at least one charging session
 SELECT c.Customer_ID, c.First_Name, c.Email 
@@ -127,10 +102,6 @@ WHERE EXISTS (
       AND cp.Power_Rating > 50.00
 );
 
-
--- ====================================================================
--- 5. ANY / ALL OPERATORS
--- ====================================================================
 
 -- 5.1 ANY: Find stations whose tariff rate is greater than ANY tariff rate of stations run by Operator 101
 SELECT Station_ID, Operator_ID, Street, Tariff_Rate 

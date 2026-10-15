@@ -10,7 +10,7 @@ public class ConnectOracle {
     // Change host, port, service name, username, and password as per lab setup
     static String url = "jdbc:oracle:thin:@localhost:1521/XEPDB1";
     static String username = "system";
-    static String password = "password";
+    static String password = "SYS";
 
     public static void main(String[] args) {
         Connection con = null;

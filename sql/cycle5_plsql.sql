@@ -1,19 +1,9 @@
--- ====================================================================
--- Voltgrid: Smart EV Charging Station Network
--- File: cycle5_plsql.sql
--- Description: Cycle Sheet V - PL/SQL Programming
--- Concepts: SELECT INTO, IF-ELSIF-ELSE, CASE, Loops (Palindrome),
---           Cursors (Explicit & Parameterized), Procedures & Functions
--- ====================================================================
-
 SET LINESIZE 200
 SET PAGESIZE 50
 SET SERVEROUTPUT ON
 SPOOL cycle5_output.txt
 
--- ====================================================================
--- 1. BASIC PL/SQL BLOCK WITH SELECT INTO
--- ====================================================================
+
 -- Fetch customer details into local PL/SQL variables and print them
 DECLARE
     v_cust_id   CUSTOMER.Customer_ID%TYPE := 401;
@@ -35,9 +25,7 @@ END;
 /
 
 
--- ====================================================================
--- 2. CONDITIONAL CONTROL: IF - ELSIF - ELSE
--- ====================================================================
+
 -- Classify station based on its per-unit electricity tariff rate
 DECLARE
     v_station_id STATION.Station_ID%TYPE := 201;
@@ -61,9 +49,6 @@ END;
 /
 
 
--- ====================================================================
--- 3. CONDITIONAL CONTROL: CASE STATEMENT
--- ====================================================================
 -- Determine charging speed category using CASE statement
 DECLARE
     v_point_id CHARGING_POINT.Point_ID%TYPE := 301;
@@ -88,9 +73,6 @@ END;
 /
 
 
--- ====================================================================
--- 4. LOOP STRUCTURE: PALINDROME CHECK
--- ====================================================================
 -- Check whether a city name or string is a palindrome using a loop
 DECLARE
     v_original VARCHAR2(50);
@@ -119,9 +101,7 @@ END;
 /
 
 
--- ====================================================================
--- 5. EXPLICIT CURSOR
--- ====================================================================
+
 -- Iterate through all stations using an explicit cursor
 DECLARE
     CURSOR cur_stations IS 
@@ -145,9 +125,6 @@ END;
 /
 
 
--- ====================================================================
--- 6. PARAMETERIZED CURSOR
--- ====================================================================
 -- Fetch all charging points belonging to a specific station ID passed as argument
 DECLARE
     CURSOR cur_points_by_station (p_sid NUMBER) IS
@@ -171,10 +148,6 @@ BEGIN
 END;
 /
 
-
--- ====================================================================
--- 7. STORED PROCEDURES (2 Procedures)
--- ====================================================================
 
 -- Procedure 1: Fetch customer information by ID using OUT parameters
 CREATE OR REPLACE PROCEDURE proc_get_customer_info (
@@ -209,10 +182,6 @@ BEGIN
 END;
 /
 
-
--- ====================================================================
--- 8. STORED FUNCTIONS (2 Functions)
--- ====================================================================
 
 -- Function 1: Calculate total billing amount for a given session ID
 CREATE OR REPLACE FUNCTION fn_calculate_bill (
@@ -253,9 +222,7 @@ END;
 /
 
 
--- ====================================================================
--- 9. ANONYMOUS BLOCK CALLING PROCEDURES AND FUNCTIONS
--- ====================================================================
+
 DECLARE
     v_name    VARCHAR2(100);
     v_email   VARCHAR2(50);

@@ -1,0 +1,376 @@
+
+Table altered.
+
+
+Table altered.
+
+
+6 rows updated.
+
+
+SESSION_ID VEHICLE_NO           SESSION_LOGGED_AT                                                                                                                                                       
+---------- -------------------- ---------------------------------------------------------------------------                                                                                             
+       601 TN-23-AB-1234        15-OCT-26 10.39.11.295000 AM                                                                                                                                            
+       602 TN-01-CD-5678        15-OCT-26 10.39.11.295000 AM                                                                                                                                            
+       603 KA-03-EF-9012        15-OCT-26 10.39.11.295000 AM                                                                                                                                            
+       604 TN-38-GH-3456        15-OCT-26 10.39.11.295000 AM                                                                                                                                            
+       605 TS-09-JK-7890        15-OCT-26 10.39.11.295000 AM                                                                                                                                            
+       606 TN-59-LM-2345        15-OCT-26 10.39.11.295000 AM                                                                                                                                            
+
+6 rows selected.
+
+
+Table altered.
+
+
+FIRST_NAME                     CAP_NAME                       SMALL_EMAIL                                                                                                                               
+------------------------------ ------------------------------ --------------------------------------------------                                                                                        
+Aarav                          AARAV                          aarav.sharma@gmail.com                                                                                                                    
+Priya                          PRIYA                          priya.nair@gmail.com                                                                                                                      
+Karthik                        KARTHIK                        karthik.rajan@yahoo.com                                                                                                                   
+Ananya                         ANANYA                         ananya.reddy@outlook.com                                                                                                                  
+Vikram                         VIKRAM                         vikram.mehta@gmail.com                                                                                                                    
+Sneha                          SNEHA                          sneha.patel@gmail.com                                                                                                                     
+
+6 rows selected.
+
+
+MODEL                          TITLE_CASE_MODEL                                                                                                                                                         
+------------------------------ ------------------------------                                                                                                                                           
+Tata Nexon EV                  Tata Nexon Ev                                                                                                                                                            
+Tata Punch EV                  Tata Punch Ev                                                                                                                                                            
+MG ZS EV                       Mg Zs Ev                                                                                                                                                                 
+Mahindra XUV400                Mahindra Xuv400                                                                                                                                                          
+Hyundai Ioniq 5                Hyundai Ioniq 5                                                                                                                                                          
+BYD Atto 3                     Byd Atto 3                                                                                                                                                               
+
+6 rows selected.
+
+
+VEHICLE_NO           STATE_CO                                                                                                                                                                           
+-------------------- --------                                                                                                                                                                           
+TN-23-AB-1234        TN                                                                                                                                                                                 
+TN-01-CD-5678        TN                                                                                                                                                                                 
+KA-03-EF-9012        KA                                                                                                                                                                                 
+TN-38-GH-3456        TN                                                                                                                                                                                 
+TS-09-JK-7890        TS                                                                                                                                                                                 
+TN-59-LM-2345        TN                                                                                                                                                                                 
+
+6 rows selected.
+
+
+EMAIL                                              EMAIL_LENGTH                                                                                                                                         
+-------------------------------------------------- ------------                                                                                                                                         
+aarav.sharma@gmail.com                                       22                                                                                                                                         
+priya.nair@gmail.com                                         20                                                                                                                                         
+karthik.rajan@yahoo.com                                      23                                                                                                                                         
+ananya.reddy@outlook.com                                     24                                                                                                                                         
+vikram.mehta@gmail.com                                       22                                                                                                                                         
+sneha.patel@gmail.com                                        21                                                                                                                                         
+
+6 rows selected.
+
+
+VEHICLE_NO           FORMATTED_PLATE                                                                                                                                                                    
+-------------------- --------------------                                                                                                                                                               
+TN-23-AB-1234        TN 23 AB 1234                                                                                                                                                                      
+TN-01-CD-5678        TN 01 CD 5678                                                                                                                                                                      
+KA-03-EF-9012        KA 03 EF 9012                                                                                                                                                                      
+TN-38-GH-3456        TN 38 GH 3456                                                                                                                                                                      
+TS-09-JK-7890        TS 09 JK 7890                                                                                                                                                                      
+TN-59-LM-2345        TN 59 LM 2345                                                                                                                                                                      
+
+6 rows selected.
+
+
+TRIMMED_STRING                                                                                                                                                                                          
+----------------                                                                                                                                                                                        
+Voltgrid Network                                                                                                                                                                                        
+
+
+CUSTOMER_ID FULL_NAME                                                                                                                                                                                   
+----------- -----------------------------------------------------------------------                                                                                                                     
+        401 Aarav Sharma                                                                                                                                                                                
+        402 Priya Nair                                                                                                                                                                                  
+        403 Karthik Rajan                                                                                                                                                                               
+        404 Ananya Reddy                                                                                                                                                                                
+        405 Vikram Mehta                                                                                                                                                                                
+        406 Sneha Patel                                                                                                                                                                                 
+
+6 rows selected.
+
+
+  POINT_ID POWER_RATING SQRT_POWER                                                                                                                                                                      
+---------- ------------ ----------                                                                                                                                                                      
+       301           65       8.06                                                                                                                                                                      
+       302           22       4.69                                                                                                                                                                      
+       303           50       7.07                                                                                                                                                                      
+       304          120      10.95                                                                                                                                                                      
+       305           11       3.32                                                                                                                                                                      
+       306           30       5.48                                                                                                                                                                      
+       307           60       7.75                                                                                                                                                                      
+
+7 rows selected.
+
+
+STATION_ID TARIFF_RATE DEVIATION_FROM_STANDARD                                                                                                                                                          
+---------- ----------- -----------------------                                                                                                                                                          
+       201          19                       1                                                                                                                                                          
+       202          25                       5                                                                                                                                                          
+       203          22                       2                                                                                                                                                          
+       204          19                       1                                                                                                                                                          
+       205        16.5                     3.5                                                                                                                                                          
+       206          21                       1                                                                                                                                                          
+
+6 rows selected.
+
+
+SESSION_ID UNITS_CONSUMED ROUNDED_UNITS TRUNCATED_UNITS                                                                                                                                                 
+---------- -------------- ------------- ---------------                                                                                                                                                 
+       601           28.5          28.5              28                                                                                                                                                 
+       602             32            32              32                                                                                                                                                 
+       603             45            45              45                                                                                                                                                 
+       604           18.2          18.2              18                                                                                                                                                 
+       605           25.4          25.4              25                                                                                                                                                 
+       606           35.8          35.8              35                                                                                                                                                 
+
+6 rows selected.
+
+
+  POINT_ID REMAINDER_MOD_2                                                                                                                                                                              
+---------- ---------------                                                                                                                                                                              
+       301               1                                                                                                                                                                              
+       302               0                                                                                                                                                                              
+       303               1                                                                                                                                                                              
+       304               0                                                                                                                                                                              
+       305               1                                                                                                                                                                              
+       306               0                                                                                                                                                                              
+       307               1                                                                                                                                                                              
+
+7 rows selected.
+
+
+STATION_ID TARIFF_RATE  CEIL_RATE FLOOR_RATE                                                                                                                                                            
+---------- ----------- ---------- ----------                                                                                                                                                            
+       201          19         19         19                                                                                                                                                            
+       202          25         25         25                                                                                                                                                            
+       203          22         22         22                                                                                                                                                            
+       204          19         19         19                                                                                                                                                            
+       205        16.5         17         16                                                                                                                                                            
+       206          21         21         21                                                                                                                                                            
+
+6 rows selected.
+
+
+SESSION_ID FORMATTED_START                                                                                                                                                                              
+---------- --------------------------------                                                                                                                                                             
+       601 01-MAR-2024 09:00:00 AM                                                                                                                                                                      
+       602 01-MAR-2024 11:30:00 AM                                                                                                                                                                      
+       603 02-MAR-2024 02:00:00 PM                                                                                                                                                                      
+       604 02-MAR-2024 04:00:00 PM                                                                                                                                                                      
+       605 03-MAR-2024 10:00:00 AM                                                                                                                                                                      
+       606 03-MAR-2024 01:00:00 PM                                                                                                                                                                      
+
+6 rows selected.
+
+
+CUSTOMER_ID REGISTRAT RENEWAL_D                                                                                                                                                                         
+----------- --------- ---------                                                                                                                                                                         
+        401 15-JAN-23 15-JUL-23                                                                                                                                                                         
+        402 20-FEB-23 20-AUG-23                                                                                                                                                                         
+        403 10-MAR-23 10-SEP-23                                                                                                                                                                         
+        404 05-APR-23 05-OCT-23                                                                                                                                                                         
+        405 12-MAY-23 12-NOV-23                                                                                                                                                                         
+        406 18-JUN-23 18-DEC-23                                                                                                                                                                         
+
+6 rows selected.
+
+
+CUSTOMER_ID MONTHS_ACTIVE                                                                                                                                                                               
+----------- -------------                                                                                                                                                                               
+        401            45                                                                                                                                                                               
+        402          43.9                                                                                                                                                                               
+        403          43.2                                                                                                                                                                               
+        404          42.3                                                                                                                                                                               
+        405          41.1                                                                                                                                                                               
+        406          39.9                                                                                                                                                                               
+
+6 rows selected.
+
+
+CUSTOMER_ID REGISTRAT NEXT_SUND                                                                                                                                                                         
+----------- --------- ---------                                                                                                                                                                         
+        401 15-JAN-23 22-JAN-23                                                                                                                                                                         
+        402 20-FEB-23 26-FEB-23                                                                                                                                                                         
+        403 10-MAR-23 12-MAR-23                                                                                                                                                                         
+        404 05-APR-23 09-APR-23                                                                                                                                                                         
+        405 12-MAY-23 14-MAY-23                                                                                                                                                                         
+        406 18-JUN-23 25-JUN-23                                                                                                                                                                         
+
+6 rows selected.
+
+
+CUSTOMER_ID REGISTRAT MONTH_END                                                                                                                                                                         
+----------- --------- ---------                                                                                                                                                                         
+        401 15-JAN-23 31-JAN-23                                                                                                                                                                         
+        402 20-FEB-23 28-FEB-23                                                                                                                                                                         
+        403 10-MAR-23 31-MAR-23                                                                                                                                                                         
+        404 05-APR-23 30-APR-23                                                                                                                                                                         
+        405 12-MAY-23 31-MAY-23                                                                                                                                                                         
+        406 18-JUN-23 30-JUN-23                                                                                                                                                                         
+
+6 rows selected.
+
+
+SESSION_ID     S_YEAR    S_MONTH                                                                                                                                                                        
+---------- ---------- ----------                                                                                                                                                                        
+       601       2024          3                                                                                                                                                                        
+       602       2024          3                                                                                                                                                                        
+       603       2024          3                                                                                                                                                                        
+       604       2024          3                                                                                                                                                                        
+       605       2024          3                                                                                                                                                                        
+       606       2024          3                                                                                                                                                                        
+
+6 rows selected.
+
+
+CUSTOMER_ID REGISTRAT ROUNDED_M TRUNCATED                                                                                                                                                               
+----------- --------- --------- ---------                                                                                                                                                               
+        401 15-JAN-23 01-JAN-23 01-JAN-23                                                                                                                                                               
+        402 20-FEB-23 01-MAR-23 01-FEB-23                                                                                                                                                               
+        403 10-MAR-23 01-MAR-23 01-MAR-23                                                                                                                                                               
+        404 05-APR-23 01-APR-23 01-APR-23                                                                                                                                                               
+        405 12-MAY-23 01-MAY-23 01-MAY-23                                                                                                                                                               
+        406 18-JUN-23 01-JUL-23 01-JUN-23                                                                                                                                                               
+
+6 rows selected.
+
+
+CONVERTED                                                                                                                                                                                               
+---------                                                                                                                                                                                               
+15-AUG-24                                                                                                                                                                                               
+
+
+TOTAL_CALCULATED                                                                                                                                                                                        
+----------------                                                                                                                                                                                        
+             161                                                                                                                                                                                        
+
+
+CUSTOMER_ID FIRST_NAME                     CHECKED_LAST_NAME                                                                                                                                            
+----------- ------------------------------ ----------------------------------------                                                                                                                     
+        401 Aarav                          Sharma                                                                                                                                                       
+        402 Priya                          Nair                                                                                                                                                         
+        403 Karthik                        Rajan                                                                                                                                                        
+        404 Ananya                         Reddy                                                                                                                                                        
+        405 Vikram                         Mehta                                                                                                                                                        
+        406 Sneha                          Patel                                                                                                                                                        
+
+6 rows selected.
+
+
+OPERATOR_ID NAME                                               STATUS_CONTACT                                                                                                                           
+----------- -------------------------------------------------- -----------------                                                                                                                        
+        101 Tata Power EV                                      Contact Available                                                                                                                        
+        102 Zeon Charging                                      Contact Available                                                                                                                        
+        103 Statiq EV                                          Contact Available                                                                                                                        
+        104 Ather Grid                                         Contact Available                                                                                                                        
+        105 Relux Electric                                     Contact Available                                                                                                                        
+        106 ChargeZone                                         Contact Available                                                                                                                        
+
+6 rows selected.
+
+
+CUSTOMER_ID CUSTOMER_LABEL                                                                                                                                                                              
+----------- ----------------------------------------                                                                                                                                                    
+        401 Sharma                                                                                                                                                                                      
+        402 Nair                                                                                                                                                                                        
+        403 Rajan                                                                                                                                                                                       
+        404 Reddy                                                                                                                                                                                       
+        405 Mehta                                                                                                                                                                                       
+        406 Patel                                                                                                                                                                                       
+
+6 rows selected.
+
+
+  POINT_ID CONNECTOR_TYPE       NULLIF_RESULT                                                                                                                                                           
+---------- -------------------- --------------------                                                                                                                                                    
+       301 CCS2                                                                                                                                                                                         
+       302 Type-2               Type-2                                                                                                                                                                  
+       303 CCS2                                                                                                                                                                                         
+       304 CCS2                                                                                                                                                                                         
+       305 Type-2               Type-2                                                                                                                                                                  
+       306 GB/T                 GB/T                                                                                                                                                                    
+       307 CCS2                                                                                                                                                                                         
+
+7 rows selected.
+
+
+TOTAL_CUSTOMERS                                                                                                                                                                                         
+---------------                                                                                                                                                                                         
+              6                                                                                                                                                                                         
+
+
+TOTAL_CHARGING_POINTS                                                                                                                                                                                   
+---------------------                                                                                                                                                                                   
+                    7                                                                                                                                                                                   
+
+
+TOTAL_UNITS_DISPATCHED                                                                                                                                                                                  
+----------------------                                                                                                                                                                                  
+                 184.9                                                                                                                                                                                  
+
+
+AVERAGE_TARIFF                                                                                                                                                                                          
+--------------                                                                                                                                                                                          
+         20.42                                                                                                                                                                                          
+
+
+MAX_BATTERY_KWH MIN_BATTERY_KWH                                                                                                                                                                         
+--------------- ---------------                                                                                                                                                                         
+           72.6              35                                                                                                                                                                         
+
+
+CHARGING_M TOTAL_POINTS                                                                                                                                                                                 
+---------- ------------                                                                                                                                                                                 
+DC                    5                                                                                                                                                                                 
+AC                    2                                                                                                                                                                                 
+
+
+CONNECTOR_TYPE       AVG_POWER_KW                                                                                                                                                                       
+-------------------- ------------                                                                                                                                                                       
+CCS2                        73.75                                                                                                                                                                       
+Type-2                       16.5                                                                                                                                                                       
+GB/T                           30                                                                                                                                                                       
+
+
+VEHICLE_NO           TOTAL_UNITS_CHARGED                                                                                                                                                                
+-------------------- -------------------                                                                                                                                                                
+TN-23-AB-1234                       28.5                                                                                                                                                                
+TN-01-CD-5678                         32                                                                                                                                                                
+KA-03-EF-9012                         45                                                                                                                                                                
+TN-38-GH-3456                       18.2                                                                                                                                                                
+TS-09-JK-7890                       25.4                                                                                                                                                                
+TN-59-LM-2345                       35.8                                                                                                                                                                
+
+6 rows selected.
+
+
+CHARGING_M POINT_COUNT                                                                                                                                                                                  
+---------- -----------                                                                                                                                                                                  
+DC                   5                                                                                                                                                                                  
+
+
+STATION_ID AVG_STATION_POWER                                                                                                                                                                            
+---------- -----------------                                                                                                                                                                            
+       201              43.5                                                                                                                                                                            
+       202                50                                                                                                                                                                            
+       203               120                                                                                                                                                                            
+       206                60                                                                                                                                                                            
+
+
+VEHICLE_NO           TOTAL_UNITS                                                                                                                                                                        
+-------------------- -----------                                                                                                                                                                        
+TN-01-CD-5678                 32                                                                                                                                                                        
+KA-03-EF-9012                 45                                                                                                                                                                        
+TN-59-LM-2345               35.8                                                                                                                                                                        
+
